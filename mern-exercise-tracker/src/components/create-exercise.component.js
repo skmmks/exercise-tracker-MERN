@@ -31,6 +31,17 @@ export default class CreateExercise extends Component {
       date: date,
     });
   }
+  onSubmit(e) {
+    e.preventDefault();
+    const exercise = {
+      username: this.state.username,
+      description: this.state.description,
+      duration: this.state.duration,
+      date: this.state.date,
+    };
+    console.log(exercise);
+    window.location = '/';
+  }
   render() {
     return (
       <div>
