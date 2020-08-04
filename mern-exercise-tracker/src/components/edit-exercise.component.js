@@ -45,6 +45,30 @@ export default class EditExercise extends Component {
         console.log(error);
       });
   }
+  onChangeUsername(e) {
+    this.setState({
+      username: e.target.value,
+    });
+  }
+
+  onChangeDescription(e) {
+    this.setState({
+      description: e.target.value,
+    });
+  }
+
+  onChangeDuration(e) {
+    this.setState({
+      duration: e.target.value,
+    });
+  }
+
+  onChangeDate(date) {
+    this.setState({
+      date: date,
+    });
+  }
+
   render() {
     return (
       <div>
